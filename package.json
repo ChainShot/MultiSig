@@ -1,0 +1,26 @@
+{
+  "name": "MultiSig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run deploy && parcel app/index.html",
+    "test": "npx buidler test",
+    "deploy": "npx buidler compile && npx buidler run scripts/deploy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.2.0",
+    "@nomiclabs/buidler-truffle5": "^1.2.0",
+    "@nomiclabs/buidler-web3": "^1.2.0",
+    "web3": "^1.2.6"
+  },
+  "browserslist": [
+    "> 5%"
+  ],
+  "dependencies": {
+    "ethers": "^4.0.46"
+  }
+}
