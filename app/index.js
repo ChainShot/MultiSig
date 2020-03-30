@@ -15,7 +15,7 @@ async function newTransaction() {
 
   const destination = document.getElementById("destination").value;
   const wei = document.getElementById("wei").value;
-  await contract.submitTransaction(destination, wei, "");
+  await contract.submitTransaction(destination, wei, "0x");
 
   populateTransactions();
 }
